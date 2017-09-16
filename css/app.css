@@ -87,10 +87,10 @@
   background-size: cover;
 }
 .header .banner-0 {
-  background-image: url(/img/banner/banner0.jpg);
+  background-image: url(./img/banner/banner0.jpg);
 }
 .header .banner-1 {
-  background-image: url(/img/banner/banner1.jpg);
+  background-image: url(./img/banner/banner1.jpg);
 }
 .section {
   padding: 30px 0 50px;
