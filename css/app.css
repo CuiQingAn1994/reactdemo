@@ -1,0 +1,142 @@
+.loader {
+  width: 11em;
+  height: 11em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -5.5em;
+  transform: rotate(45deg);
+}
+.loader:before,
+.loader:after {
+  content: '';
+  display: block;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.5em;
+}
+.loader:after {
+  animation: moveafter 2s infinite;
+}
+.loader:before {
+  animation: movebefore 2s infinite;
+}
+.loader-text {
+  width: 20em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -10em;
+  margin-top: -5em;
+  text-align: center;
+  font-size: 30px;
+}
+@keyframes moveafter {
+  0% {
+    box-shadow: 5em -3em #c9f0fc, -5em 3em #f4a7c4;
+  }
+  35% {
+    width: 11em;
+    box-shadow: 0 -3em #c9f0fc, 0 3em #f4a7c4;
+  }
+  70% {
+    width: 1em;
+    box-shadow: -5em -3em #c9f0fc, 5em 3em #f4a7c4;
+  }
+  100% {
+    box-shadow: 5em -3em #c9f0fc, -5em 3em #f4a7c4;
+  }
+}
+@keyframes movebefore {
+  0% {
+    box-shadow: 3em 5em #f7dfac, -3em -5em #b3e5d5;
+  }
+  35% {
+    height: 11em;
+    box-shadow: 3em 0 #f7dfac, -3em 0 #b3e5d5;
+  }
+  70% {
+    height: 1em;
+    box-shadow: 3em -5em #f7dfac, -3em 5em #b3e5d5;
+  }
+  100% {
+    box-shadow: 3em 5em #f7dfac, -3em -5em #b3e5d5;
+  }
+}
+.header .logo {
+  cursor: pointer;
+}
+.header .nav a {
+  padding: 15px;
+  background: none!important;
+}
+.header .nav a:hover {
+  background: none;
+}
+.header input {
+  margin-top: 8px;
+}
+.header .banner {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.header .banner-0 {
+  background-image: url(/img/banner/banner0.jpg);
+}
+.header .banner-1 {
+  background-image: url(/img/banner/banner1.jpg);
+}
+.section {
+  padding: 30px 0 50px;
+}
+.section ul,
+.section li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.section ul {
+  margin-right: -20px;
+}
+.section li {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 270px;
+  height: 180px;
+  overflow: hidden;
+}
+.section li a {
+  color: #fff;
+  display: block;
+  height: 180px;
+  text-decoration: none;
+}
+.section .content {
+  display: table-cell;
+  vertical-align: middle;
+  width: 270px;
+  height: 180px;
+  text-align: center;
+  padding: 0 20px;
+}
+.section .layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px 20px;
+  display: none;
+}
+.section a:hover .layer {
+  display: block;
+}
